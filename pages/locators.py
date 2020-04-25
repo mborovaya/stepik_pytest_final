@@ -20,6 +20,13 @@ class ProductPageLocators():
     PRODUCT_PRICE_IN_BASKET = (By.CSS_SELECTOR, ".alertinner>p>strong")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages > div:nth-child(1)")
 
-class BasePageLocators():
+class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_LINK = (By.CSS_SELECTOR, ".btn-group > a")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+
+
+class BasketPageLocators:
+    BASKET_ITEM = (By.CSS_SELECTOR, ".basket-items")
+    BASKET_EMPTY_TEXT = (By.CSS_SELECTOR, "#content_inner>p")
